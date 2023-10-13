@@ -1,0 +1,274 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #2f1793;
+    column-gap: 60px;
+}
+
+/* HEADER CSS */
+.header {
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 70px 20px 40px 20px;
+    top: 0;
+    background-color: #2f1793;
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav,
+.nav_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo,
+.nav_link,
+.button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.nav_link.visited {
+    color: #6f8ece;
+}
+
+.nav_logo {
+    font-size: 25px;
+}
+
+.nav_item {
+    column-gap: 25px;
+}
+
+.nav_link:hover {
+    color: #d9d9d9;
+}
+
+.button {
+    padding: 6px 24px;
+    border: 2px solid #e93a7d;
+    background: #e93a7d;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* LEFT CONTENT */
+.content {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 6px;
+    color: #FFF;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.par {
+    padding: 15px 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* SIGN UP FORM CSS */
+.form {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    height: fit-content;
+    padding: 50px 60px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.form-header {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1e0e62;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form .field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+}
+
+.field input:focus {
+    border-bottom-width: 2px;
+}
+
+.field button {
+    color: #fff;
+    background-color: #482be7;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.field button:hover {
+    background-color: #016dcb;
+}
+
+.form-terms {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-terms input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.65rem;
+    accent-color: #22dac5;
+}
+
+.form-terms label {
+    font-size: 14px;
+    color: grey
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+.line::before {
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.media-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.twitter {
+    color: #fff;
+    background-color: #1ea1f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-link {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    margin-top: 20px;
+}
+
+.signin-link {
+    color: #22dac5
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .par {
+        font-size: 12px;
+    }
+
+    .content {
+        margin-top: 40vh;
+    }
+
+    .form-header {
+        font-size: 30px;
+    }
+
+    .header {
+        padding: 20px;
+        height: 275px;
+    }
+
+    .nav_item {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.8em 0;
+    }
+}
